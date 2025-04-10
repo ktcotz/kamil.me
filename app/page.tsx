@@ -1,3 +1,9 @@
+import { Button } from "@/components/ui";
+
 export default function Home() {
-  return <div>Home of kamil.me!</div>;
+  return (
+    <div>
+      <Button>Kliknij mi tutaj!</Button>
+    </div>
+  );
 }
