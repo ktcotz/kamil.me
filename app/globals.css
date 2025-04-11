@@ -1,5 +1,5 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -119,4 +119,17 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html:has(.custom-cursor-enabled) a,
+html:has(.custom-cursor-enabled) button,
+html:has(.custom-cursor-enabled) [role='button'],
+html:has(.custom-cursor-enabled) input,
+html:has(.custom-cursor-enabled) select,
+html:has(.custom-cursor-enabled) textarea {
+  cursor: none !important;
 }
