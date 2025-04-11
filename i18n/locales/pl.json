@@ -1,3 +1,8 @@
 {
-  "greeting": "Witaj Next!"
+  "greeting": "Witaj Next!",
+  "metadata-home": {
+    "title": "Kamil Naskręt - Frontend Developer | kamil.me",
+    "description": "Osobista strona z projektami, opisem mojej osoby i blogiem głównie o tematach frontendowych ale nie tylko!",
+    "open-graph-description": "Zajrzyj do mojej przestrzeni w internecie – projekty, przemyślenia, frontendowe tipy!"
+  }
 }
