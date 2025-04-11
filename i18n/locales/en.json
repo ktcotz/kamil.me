@@ -1,3 +1,8 @@
 {
-  "greeting": "Hello Next!"
+  "greeting": "Hello Next!",
+  "metadata-home": {
+    "title": "Kamil Naskręt - Frontend Developer | kamil.me",
+    "description": "Personal website with projects, description of myself and a blog mainly about frontend topics but not only!",
+    "open-graph-description": "Check out my space on the internet – projects, thoughts, frontend tips!"
+  }
 }
