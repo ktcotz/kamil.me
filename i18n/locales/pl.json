@@ -10,7 +10,22 @@
     "about": "O mnie",
     "projects": "Projekty",
     "blog": "Blog",
+    "services": "Usługi",
     "contact": "Kontakt",
     "settings": "Ustawienia"
+  },
+  "theme": {
+    "light": "Jasny",
+    "dark": "Ciemny",
+    "system": "Systemowy",
+    "change": "Przełącz motyw"
+  },
+  "language": {
+    "change": "Zmień język",
+    "polish": "Polski",
+    "english": "Angielski"
+  },
+  "utils": {
+    "check": "Wybrany"
   }
 }

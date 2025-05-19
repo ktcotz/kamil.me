@@ -1,6 +1,8 @@
 'use client';
-import { Moon, Sun } from 'lucide-react';
+
+import { Check, Moon, Sun } from 'lucide-react';
 import { useTheme } from 'next-themes';
+import { useEffect, useState } from 'react';
 
 import {
   DropdownMenu,
@@ -9,28 +11,55 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/Dropdown-menu';
 import { Button } from './Button';
+import { useTranslations } from 'next-intl';
 
 export function ThemeSwitcher() {
-  const { setTheme } = useTheme();
+  const { setTheme, resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+  const t = useTranslations();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
+
+  const isDark = resolvedTheme === 'dark';
 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="icon">
-          <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-          <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-          <span className="sr-only">Przełącz theme</span>
+        <Button variant="ghost" size="icon" aria-label={t('theme.change')}>
+          <Sun
+            className={`h-[1.2rem] w-[1.2rem] transition-all absolute ${
+              isDark ? 'rotate-90 scale-0' : 'rotate-0 scale-100'
+            }`}
+            aria-label={t('theme.light')}
+          />
+          <Moon
+            className={`h-[1.2rem] w-[1.2rem] transition-all ${
+              isDark ? 'rotate-0 scale-100' : '-rotate-90 scale-0'
+            }`}
+            aria-label={t('theme.dark')}
+          />
+          <span className="sr-only">{t('theme.change')}</span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <DropdownMenuItem onClick={() => setTheme('light')}>
-          Light
+          {t('theme.light')}
+          {!isDark && (
+            <Check aria-label={t('utils.check')} className="h-4 w-4 ml-auto" />
+          )}
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setTheme('dark')}>
-          Dark
+          {t('theme.dark')}
+          {isDark && (
+            <Check aria-label={t('utils.check')} className="h-4 w-4 ml-auto" />
+          )}
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setTheme('system')}>
-          System
+          {t('theme.system')}
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

@@ -15,6 +15,7 @@ export const Navigation = () => {
     { href: '/', label: t('navigation.home') },
     { href: '/about', label: t('navigation.about') },
     { href: '/projects', label: t('navigation.projects') },
+    { href: '/services', label: t('navigation.services') },
     { href: '/blog', label: t('navigation.blog') },
     { href: '/contact', label: t('navigation.contact') },
   ];
@@ -41,7 +42,7 @@ export const Navigation = () => {
               {isActive && (
                 <motion.div
                   layoutId="navigation-underline"
-                  className="absolute -bottom-[21px] left-0 right-0 h-[2px] bg-primary"
+                  className="absolute -bottom-[22px] left-0 right-0 h-[2px] bg-primary"
                   transition={{ type: 'spring', stiffness: 350, damping: 30 }}
                 />
               )}

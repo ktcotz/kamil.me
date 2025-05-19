@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { Navigation } from '../Navigation';
 import { ThemeSwitcher } from '@/components/ui/ThemeSwitcher';
+import { LanguageSwitcher } from '@/components/ui/LanguageSwitcher';
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,6 +24,7 @@ export const Header = () => {
         <Navigation />
         <div className="flex items-center gap-2">
           <ThemeSwitcher />
+          <LanguageSwitcher />
         </div>
       </div>
     </header>

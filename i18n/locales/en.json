@@ -10,7 +10,22 @@
     "about": "About",
     "projects": "Projects",
     "blog": "Blog",
+    "services": "Services",
     "contact": "Contact",
     "settings": "Settings"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "change": "Change theme"
+  },
+  "language": {
+    "change": "Change language",
+    "polish": "Polish",
+    "english": "English"
+  },
+  "utils": {
+    "check": "Checked"
   }
 }

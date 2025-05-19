@@ -24,12 +24,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body className={`${inter.className}`}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <CustomCursor />
           <NextIntlClientProvider>
             <div className="min-h-[300vh] flex flex-col">
