@@ -2,9 +2,10 @@ import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { Inter } from 'next/font/google';
 import { routing } from '@/i18n/routing';
-import { CustomCursor } from '@/components/ui';
+import { CustomCursor, ThemeProvider } from '@/components/ui';
 
 import './../globals.css';
+import { Header } from '@/components/layout';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -22,9 +23,21 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body className={`${inter.className} bg-black`}>
-        <CustomCursor />
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+      <body className={`${inter.className}`}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <CustomCursor />
+          <NextIntlClientProvider>
+            <div className="min-h-[300vh] flex flex-col">
+              <Header />
+              <main className="flex-1">{children}</main>
+            </div>
+          </NextIntlClientProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
