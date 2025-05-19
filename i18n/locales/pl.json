@@ -4,5 +4,13 @@
     "title": "Kamil Naskręt - Frontend Developer | kamil.me",
     "description": "Osobista strona z projektami, opisem mojej osoby i blogiem głównie o tematach frontendowych ale nie tylko!",
     "open-graph-description": "Zajrzyj do mojej przestrzeni w internecie – projekty, przemyślenia, frontendowe tipy!"
+  },
+  "navigation": {
+    "home": "Strona główna",
+    "about": "O mnie",
+    "projects": "Projekty",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "settings": "Ustawienia"
   }
 }
