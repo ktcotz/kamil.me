@@ -5,7 +5,7 @@ import { routing } from '@/i18n/routing';
 import { CustomCursor, ThemeProvider } from '@/components/ui';
 
 import './../globals.css';
-import { Header } from '@/components/layout';
+import { Footer, Header } from '@/components/layout';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -27,9 +27,10 @@ export default async function LocaleLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <CustomCursor />
           <NextIntlClientProvider>
-            <div className="min-h-[300vh] flex flex-col">
+            <div className="min-h-screen flex flex-col">
               <Header />
               <main className="flex-1">{children}</main>
+              <Footer />
             </div>
           </NextIntlClientProvider>
         </ThemeProvider>

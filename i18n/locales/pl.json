@@ -32,5 +32,17 @@
   },
   "utils": {
     "check": "Wybrany"
+  },
+  "footer": {
+    "showcase": "Prezentacja mojej pracy i umiejętności jako front-end developera.",
+    "pages": "Strony",
+    "services": "Usługi",
+    "contact": "Kontakt",
+    "localization": "Zielona Góra, Polska"
+  },
+  "services": {
+    "frontend": "Frontend Development",
+    "backend": "Backend Development",
+    "maintain": "Zarządzanie i utrzymywanie projektu"
   }
 }

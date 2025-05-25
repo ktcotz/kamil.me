@@ -32,5 +32,17 @@
   },
   "utils": {
     "check": "Checked"
+  },
+  "footer": {
+    "showcase": "A showcase of my work and skills as a frontend web developer.",
+    "pages": "Pages",
+    "services": "Services",
+    "contact": "Contact",
+    "localization": "Zielona Góra, Poland"
+  },
+  "services": {
+    "frontend": "Frontend Development",
+    "backend": "Backend Development",
+    "maintain": "Maintaining project"
   }
 }
