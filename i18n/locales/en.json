@@ -12,7 +12,12 @@
     "blog": "Blog",
     "services": "Services",
     "contact": "Contact",
-    "settings": "Settings"
+    "settings": "Settings",
+    "hamburger": {
+      "open": "Open menu",
+      "close": "Close menu",
+      "toggle": "Toggle menu"
+    }
   },
   "theme": {
     "light": "Light",

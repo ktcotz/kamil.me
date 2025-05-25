@@ -5,8 +5,13 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 import { motion } from 'framer-motion';
+import { twMerge } from 'tailwind-merge';
 
-export const Navigation = () => {
+type NavigationProps = {
+  isOpen?: boolean;
+};
+
+export const Navigation = ({ isOpen }: NavigationProps) => {
   const t = useTranslations();
   const locale = useLocale();
   const pathname = usePathname();
@@ -20,9 +25,16 @@ export const Navigation = () => {
     { href: '/contact', label: t('navigation.contact') },
   ];
 
+  const navContainer = twMerge(
+    'hidden md:flex',
+    isOpen && 'flex',
+    isOpen !== undefined && 'md:hidden',
+  );
+  const listContainer = twMerge('flex gap-6', isOpen && 'flex-col p-4');
+
   return (
-    <nav className="hidden md:flex ">
-      <ul className="flex gap-6">
+    <nav className={navContainer}>
+      <ul className={listContainer}>
         {navItems.map(({ href, label }) => {
           const localizedHref = `/${locale}${href}`;
           const isActive =
@@ -39,7 +51,7 @@ export const Navigation = () => {
               data-cursor-hover
             >
               {label}
-              {isActive && (
+              {isActive && !isOpen && (
                 <motion.div
                   layoutId="navigation-underline"
                   className="absolute -bottom-[22px] left-0 right-0 h-[2px] bg-primary"

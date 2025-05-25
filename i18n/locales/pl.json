@@ -12,7 +12,12 @@
     "blog": "Blog",
     "services": "Usługi",
     "contact": "Kontakt",
-    "settings": "Ustawienia"
+    "settings": "Ustawienia",
+    "hamburger": {
+      "open": "Otwórz menu",
+      "close": "Zamknij menu",
+      "toggle": "Przełączaj menu"
+    }
   },
   "theme": {
     "light": "Jasny",
