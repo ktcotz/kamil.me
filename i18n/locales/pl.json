@@ -3,7 +3,9 @@
   "metadata-home": {
     "title": "Kamil Naskręt - Frontend Developer | kamil.me",
     "description": "Osobista strona z projektami, opisem mojej osoby i blogiem głównie o tematach frontendowych ale nie tylko!",
-    "open-graph-description": "Zajrzyj do mojej przestrzeni w internecie – projekty, przemyślenia, frontendowe tipy!"
+    "open-graph-description": "Zajrzyj do mojej przestrzeni w internecie – projekty, przemyślenia, frontendowe tipy!",
+    "not-found-title": "404 – Strona nie znaleziona | kamil.me",
+    "not-found-description": "Ups! Nie mogliśmy znaleźć tej strony na kamil.me. Sprawdź adres lub wróć na stronę główną."
   },
   "navigation": {
     "home": "Strona główna",
@@ -38,11 +40,18 @@
     "pages": "Strony",
     "services": "Usługi",
     "contact": "Kontakt",
-    "localization": "Zielona Góra, Polska"
+    "localization": "Zielona Góra, Polska",
+    "copyright": "Wszystkie prawa zastrzeżone."
   },
   "services": {
     "frontend": "Frontend Development",
     "backend": "Backend Development",
     "maintain": "Zarządzanie i utrzymywanie projektu"
+  },
+  "notFound": {
+    "title": "Strona nie znaleziona",
+    "description": "Strona, której szukasz, nie istnieje lub została przeniesiona.",
+    "toHome": "Powrót do strony głównej",
+    "back": "Wróć"
   }
 }

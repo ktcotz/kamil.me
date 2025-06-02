@@ -83,6 +83,11 @@ export const Footer = () => {
             </div>
           </div>
         </div>
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-xs text-muted-foreground">
+            &copy; {new Date().getFullYear()} Kamil.me. {t('footer.copyright')}
+          </p>
+        </div>
       </div>
     </footer>
   );
