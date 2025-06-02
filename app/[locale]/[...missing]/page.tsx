@@ -1,5 +1,5 @@
-import { Button } from '@/components/ui';
-import { ArrowLeft, Home } from 'lucide-react';
+import { Button, ButtonBack } from '@/components/ui';
+import { Home } from 'lucide-react';
 import { Locale } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import Link from 'next/link';
@@ -39,17 +39,12 @@ export default async function MissingCatchAll() {
       </p>
       <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
         <Button asChild size="lg">
-          <Link href="/" className="flex gap-1">
+          <Link href="/">
             <Home className="h-5 w-5" aria-hidden={true} />
             <span> {t('notFound.toHome')}</span>
           </Link>
         </Button>
-        <Button asChild size="lg" variant="outline">
-          <Link href="/" className="flex gap-1">
-            <ArrowLeft className="h-5 w-5" aria-hidden={true} />
-            <span> {t('notFound.back')}</span>
-          </Link>
-        </Button>
+        <ButtonBack />
       </div>
     </div>
   );
