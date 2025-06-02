@@ -5,7 +5,9 @@
     "description": "Osobista strona z projektami, opisem mojej osoby i blogiem głównie o tematach frontendowych ale nie tylko!",
     "open-graph-description": "Zajrzyj do mojej przestrzeni w internecie – projekty, przemyślenia, frontendowe tipy!",
     "not-found-title": "404 – Strona nie znaleziona | kamil.me",
-    "not-found-description": "Ups! Nie mogliśmy znaleźć tej strony na kamil.me. Sprawdź adres lub wróć na stronę główną."
+    "not-found-description": "Ups! Nie mogliśmy znaleźć tej strony na kamil.me. Sprawdź adres lub wróć na stronę główną.",
+    "contact-title": "Kontakt | kamil.me",
+    "contact-description": "Skontaktuj się ze mną w celach projektowych"
   },
   "navigation": {
     "home": "Strona główna",
@@ -53,5 +55,26 @@
     "description": "Strona, której szukasz, nie istnieje lub została przeniesiona.",
     "toHome": "Powrót do strony głównej",
     "back": "Wróć"
+  },
+  "contact": {
+    "title": "Skontaktuj się",
+    "description": "Masz jakiś projekt na myśli lub po prostu chcesz się przywitać? Chętnie Cię wysłucham!",
+    "information": "Dane Kontaktowe",
+    "email": "Email",
+    "phone": "Numer telefonu",
+    "localization": "Miejsce zamieszkania",
+    "connect": "Moje social media",
+    "hours": "Godziny pracy",
+    "days": {
+      "mondayToFriday": "Poniedziałek - Piątek",
+      "saturday": "Sobota",
+      "sunday": "Niedziela"
+    },
+    "times": {
+      "week": "9:00 - 20:00",
+      "saturday": "8:00 - 20:00",
+      "sunday": "Zamknięte dla niepilnych spraw"
+    },
+    "message": "Wyślij mi wiadomość"
   }
 }

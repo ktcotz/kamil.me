@@ -5,7 +5,9 @@
     "description": "Personal website with projects, description of myself and a blog mainly about frontend topics but not only!",
     "open-graph-description": "Check out my space on the internet – projects, thoughts, frontend tips!",
     "not-found-title": "404 – Page not found | kamil.me",
-    "not-found-description": "Oops! We couldn't find that page on kamil.me. Please check the URL or return to the homepage."
+    "not-found-description": "Oops! We couldn't find that page on kamil.me. Please check the URL or return to the homepage.",
+    "contact-title": "Contact | kamil.me",
+    "contact-description": "Contact me for design purposes"
   },
   "navigation": {
     "home": "Home",
@@ -53,5 +55,26 @@
     "description": "The page you are looking for doesn't exist or has been moved.",
     "toHome": "Back to Home",
     "back": "Go Back"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "description": "Have a project in mind or just want to say hello? I'd love to hear from you!",
+    "information": "Contact Information",
+    "email": "Email",
+    "phone": "Phone",
+    "localization": "Location",
+    "connect": "Connect with me",
+    "hours": "Working Hours",
+    "days": {
+      "mondayToFriday": "Monday - Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday"
+    },
+    "times": {
+      "week": "9:00 AM - 20:00 PM",
+      "saturday": "8:00 AM - 20:00 PM",
+      "sunday": "Closed unless urgent"
+    },
+    "message": "Send Me a Message"
   }
 }
