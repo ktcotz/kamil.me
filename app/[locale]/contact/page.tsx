@@ -1,6 +1,6 @@
+import { ContactWrapper } from '@/components/layout';
 import { Locale } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
-import { ContactForm } from '@/components/layout/ContactForm';
 
 type Params = {
   params: Promise<{
@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Params) {
 export default function Contact() {
   return (
     <div className="flex flex-col items-center justify-center px-4 py-12 md:py-24 lg:py-32 md:px-6 gap-10">
-      <ContactForm />
+      <ContactWrapper />
     </div>
   );
 }

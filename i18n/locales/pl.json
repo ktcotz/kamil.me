@@ -73,8 +73,36 @@
     "times": {
       "week": "9:00 - 20:00",
       "saturday": "8:00 - 20:00",
-      "sunday": "Zamknięte dla niepilnych spraw"
+      "sunday": "Zamknięte"
     },
     "message": "Wyślij mi wiadomość"
+  },
+  "form": {
+    "name": {
+      "tooShort": "Imie musi mieć minimum 2 znaki.",
+      "required": "Imie jest wymagane.",
+      "title": "Imie",
+      "placeholder": "Twoje imię"
+    },
+    "email": {
+      "required": "Email jest wymagany.",
+      "invalid": "Niepoprawny adres email.",
+      "title": "Email",
+      "placeholder": "Twój email"
+    },
+    "subject": {
+      "required": "Tytuł jest wymagany.",
+      "tooShort": "Tytuł musi mieć minimum 3 znaki.",
+      "title": "Tytuł",
+      "placeholder": "Tytuł wiadomości"
+    },
+    "message": {
+      "required": "Wiadomość jest wymagana.",
+      "tooLong": "Wiadomość może mieć maksymalnie 200 znaków.",
+      "tooShort": "Wiadomość musi mieć minimum 10 znaków.",
+      "title": "Wiadomość",
+      "placeholder": "Twoja wiadomość do mnie"
+    },
+    "submit": "Wyślij wiadomość"
   }
 }

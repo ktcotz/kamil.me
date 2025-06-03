@@ -1,10 +1,10 @@
 'use client';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
-import { ContactInformations } from './components';
+import { ContactForm, ContactInformations } from './components';
 import { SocialLinks } from '../Footer/components';
 
-export const ContactForm = () => {
+export const ContactWrapper = () => {
   const t = useTranslations();
 
   return (
@@ -79,6 +79,7 @@ export const ContactForm = () => {
           className="space-y-6"
         >
           <h2 className="text-2xl font-bold">{t('contact.message')}</h2>
+          <ContactForm />
         </motion.div>
       </div>
     </motion.div>

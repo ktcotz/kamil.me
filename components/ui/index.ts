@@ -4,3 +4,7 @@ export * from './Logo';
 export * from './Dropdown-menu';
 export * from './ThemeProvider';
 export * from './ButtonBack';
+export * from './Input';
+export * from './Label';
+export * from './Form';
+export * from './Textarea';

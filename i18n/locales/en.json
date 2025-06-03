@@ -73,8 +73,36 @@
     "times": {
       "week": "9:00 AM - 20:00 PM",
       "saturday": "8:00 AM - 20:00 PM",
-      "sunday": "Closed unless urgent"
+      "sunday": "Closed"
     },
     "message": "Send Me a Message"
+  },
+  "form": {
+    "name": {
+      "tooShort": "Name must be at least 2 characters.",
+      "required": "Name is required.",
+      "title": "Name",
+      "placeholder": "Your name"
+    },
+    "email": {
+      "required": "Email is required.",
+      "invalid": "Invalid email address.",
+      "title": "Email",
+      "placeholder": "Your email"
+    },
+    "subject": {
+      "required": "Subject is required.",
+      "tooShort": "Subject must be at least 3 characters.",
+      "title": "Subject",
+      "placeholder": "Subject of message"
+    },
+    "message": {
+      "required": "Message is required.",
+      "tooShort": "Message must be at least 10 characters.",
+      "tooLong": "Message can be max 200 characters.",
+      "title": "Message",
+      "placeholder": "Your message"
+    },
+    "submit": "Send message"
   }
 }
